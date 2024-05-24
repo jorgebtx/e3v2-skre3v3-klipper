@@ -28,18 +28,18 @@ cors_domains:
 channel: dev
 refresh_interval: 168
 
-[update_manager fluidd-config]
+[update_manager mainsail-config]
 type: git_repo
 primary_branch: master
-path: ~/fluidd-config
-origin: https://github.com/fluidd-core/fluidd-config.git
+path: ~/mainsail-config
+origin: https://github.com/mainsail-crew/mainsail-config.git
 managed_services: klipper
 
-[update_manager fluidd]
+[update_manager mainsail]
 type: web
 channel: stable
-repo: fluidd-core/fluidd
-path: ~/fluidd
+repo: mainsail-crew/mainsail
+path: ~/mainsail
 
 [include octoeverywhere-system.cfg]
 
